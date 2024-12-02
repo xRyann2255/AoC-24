@@ -2,9 +2,7 @@ f = [[int(num) for num in l.strip().split(" ")] for l in open("2.txt")]
 answer = 0
 
 def is_safe(line):
-    safe = False
     if line == sorted(line) or line == list(reversed(sorted(line))):
-        line.sort()
         for i in range(len(line) - 1):
             difference = abs(line[i] - line[i + 1])
             if difference < 1 or difference > 3:
