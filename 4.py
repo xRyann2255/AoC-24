@@ -14,7 +14,6 @@ directions = [
     (-1, 0),  # Top
     (-1, 1)   # Top-Right
 ]
-words = ['XMAS']
 
 def search(row, col, dr, dc):
     row += dr
@@ -64,4 +63,3 @@ for row in range(1, rows - 1):
             answer += 1
 
 print(answer)
-
