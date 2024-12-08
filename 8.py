@@ -36,6 +36,6 @@ for frequency, antennas in antenna_locations.items():
             # Out of bounds check
             while 0 <= y2 < n and 0 <= x2 < m:
                 antinodes_part2.add((y2, x2))
-                (y2, x2) = tuple(a + b for a, b in zip((y2, x2), distance))
+                y2, x2 = tuple(a + b for a, b in zip((y2, x2), distance))
 
 print(len(antinodes_part2))
