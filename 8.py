@@ -1,11 +1,10 @@
 # line by line input
 from collections import defaultdict
 
-antenna_locations = defaultdict(list)
-
 f = [l.strip() for l in open("8.txt")]
-
 n, m = len(f), len(f[0])
+
+antenna_locations = defaultdict(list)
 
 for i in range(n):
     for j in range(m):
